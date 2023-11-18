@@ -5,7 +5,7 @@ package LeetCode.binarySearch;
 //Return the smallest character in letters that is lexicographically greater than target.
 // If such a character does not exist, return the first character in letters.
 
-public class BinarSerach {
+public class FindSmallestLetterGreaterThanTarget {
     public static void main(String[] args) {
         char[] letters = {'c','f', 'j'};
         char target = 'd';
