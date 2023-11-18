@@ -1,5 +1,5 @@
 # DataStructures-And-Algorithms
 Leetcode challenges:-
-    Linear Search
-    Binary Search
+    1. Linear Search
+    2. Binary Search
 
