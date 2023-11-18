@@ -1,2 +1,5 @@
 # DataStructures-And-Algorithms
-Leetcode challenges for Binary Serach 
+Leetcode challenges:-
+Linear Search
+Binary Search
+
