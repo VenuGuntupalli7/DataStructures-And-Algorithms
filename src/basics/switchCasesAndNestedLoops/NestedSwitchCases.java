@@ -1,3 +1,4 @@
+/*
 package basics.switchCasesAndNestedLoops;
 
 import java.util.Scanner;
@@ -21,3 +22,4 @@ public class NestedSwitchCases {
         }
     }
 }
+*/
