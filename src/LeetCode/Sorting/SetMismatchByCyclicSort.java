@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 //https://leetcode.com/problems/set-mismatch/
 
-public class SetMismatch {
+public class SetMismatchByCyclicSort {
     public static void main(String[] args) {
         int [] nums = {1,2,2,4};
         int[] ans = findErrorNums(nums);
