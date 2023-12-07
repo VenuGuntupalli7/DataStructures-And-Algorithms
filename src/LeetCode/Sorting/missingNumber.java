@@ -1,4 +1,4 @@
-package LeetCode.algorithms;
+package LeetCode.Sorting;
 
 class missingNumber {
     public static void main(String[] args) {
