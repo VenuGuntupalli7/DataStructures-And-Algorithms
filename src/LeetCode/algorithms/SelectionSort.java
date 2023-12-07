@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class SelectionSort {
     public static void main(String[] args) {
-        int[] arr = {4,5,2,1,3,45,-50,-100,4565,989876878};
+        int[] arr = {4,5,2,1,3,45,25,90};
 
         for(int i=0; i<arr.length; i++){
             int lastIndex = arr.length-i-1;
