@@ -12,5 +12,9 @@ public class StringComparsion {
         String name4 = new String("Venu");
         System.out.println(name3 == name4);  // this is false because even though we created two objects outside of String pool via using new keyword which
                                              // can create objects in heap memory. but the == will only be true if the both reference variables are pointed to single object
+
+
+        System.out.println(name1.equals(name2));
+        System.out.println(name1.charAt(3));
     }
 }
