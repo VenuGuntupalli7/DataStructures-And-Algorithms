@@ -1,4 +1,4 @@
-package basics.fundamentals;
+package basics.String;
 
 public class StringComparsion {
     public static void main(String[] args) {
