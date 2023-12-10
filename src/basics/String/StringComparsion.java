@@ -16,5 +16,6 @@ public class StringComparsion {
 
         System.out.println(name1.equals(name2));
         System.out.println(name1.charAt(3));
+
     }
 }
