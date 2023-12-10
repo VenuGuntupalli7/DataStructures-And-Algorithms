@@ -13,6 +13,7 @@ public class String_Builder {
         System.out.println(builder);
         builder.append('c');
         builder.insert(2,'e');
+        builder.reverse();
         System.out.println(builder.indexOf("v"));
         System.out.println(builder);
                                       //By using StringBuilder we don't need to create String object in heap for 25 times,
