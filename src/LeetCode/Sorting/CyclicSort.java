@@ -6,6 +6,7 @@ public class CyclicSort {
     public static void main(String[] args) {
 
          int[] nums = {3,5,2,1,4};
+         //1,2,3,4,5
 
          int i =0;
          while(i<nums.length){
@@ -26,3 +27,4 @@ public class CyclicSort {
         nums[a] = temp;
     }
 }
+
