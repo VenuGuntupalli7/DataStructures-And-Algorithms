@@ -11,4 +11,5 @@
   - Cyclic Sort 🔄
   - Insertion Sort 📥
   - Merge Sort 🔄
-** this list goes on!!!!
+
+Still, there's a lot more to add! Stay tuned for further updates and additions to our project.
