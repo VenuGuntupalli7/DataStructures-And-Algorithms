@@ -3,7 +3,7 @@ package LeetCode.fundamentals.assignments;
 class FibonaccoSeries {
     public static void main(String[] args) {
 
-        //fuck you Venu, you have to write your own algorithm, don't fucking copy you pussy!
+
 
         int n =10;
         int FOfzero = 0;
