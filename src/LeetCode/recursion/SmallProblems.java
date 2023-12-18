@@ -1,4 +1,4 @@
-package LeetCode.Recursion;
+package LeetCode.recursion;
 
 public class SmallProblems {                 //Space complexity: O(n) times, because we are storing n times each function calls and not taking any extra space
     public static void main(String[] args) { // Time complexity is : O(n) times, because we are printing n times,

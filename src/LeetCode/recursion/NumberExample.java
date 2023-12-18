@@ -1,4 +1,4 @@
-package LeetCode.Recursion;
+package LeetCode.recursion;
 
 public class NumberExample {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package LeetCode.Recursion;
+package LeetCode.recursion;
 
 public class ReverseaNumber {
     static int sum = 0;

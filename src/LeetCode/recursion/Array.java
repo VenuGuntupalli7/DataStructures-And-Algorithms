@@ -1,4 +1,4 @@
-package LeetCode.Recursion;
+package LeetCode.recursion;
 
 import java.util.ArrayList;
 

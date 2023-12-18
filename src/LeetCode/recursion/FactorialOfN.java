@@ -1,4 +1,4 @@
-package LeetCode.Recursion;
+package LeetCode.recursion;
 
 public class FactorialOfN {
     public static void main(String[] args) {
