@@ -7,11 +7,17 @@ import java.util.Arrays;
 public class QuickSorting {
     public static void main(String[] args) {
     int[] nums ={5,4,3,2,1};
-    sort(nums,0,nums.length-1);
+        sorting(nums,0,nums.length-1);
         System.out.println(Arrays.toString(nums));
+
+
+        // in- built java sort methods
+        Arrays.sort(nums);
+        System.out.println(Arrays.toString(nums));
+
     }
 
-    static void sort(int[] nums, int low, int high){
+    static void sorting(int[] nums, int low, int high){
        if(low >= high){
            return;
        }
@@ -41,8 +47,8 @@ public class QuickSorting {
        }
        // now my pivot is at correct index, please sort two halves now
 
-        sort(nums, low, end);
-        sort(nums,start,high);
+        sorting(nums, low, end);
+        sorting(nums,start,high);
 
     }
 }
