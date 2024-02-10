@@ -7,7 +7,8 @@ public class SingleLinkedList {
         list.insertValues(40);
         list.insertValues(50);
         list.insertValues(60);
-        list.insertMiddle(45,2);
+        list.insertMiddle(77,2);
+        list.insertMiddle2(500,1);
         list.display();
     }
 
@@ -37,6 +38,19 @@ public class SingleLinkedList {
         tail.next = node1;
         tail = node1;
 
+        size++;
+    }
+
+    public void insertMiddle2(int data, int index){
+
+        Node temp = head;
+
+        for(int i=1; i<index; i++){
+            temp = temp.next;
+        }
+
+        Node node3 = new Node(data, temp.next);
+        temp.next = node3;
         size++;
     }
 
