@@ -9,10 +9,22 @@ public class SingleLinkedList {
         list.insertValues(60);
         list.insertMiddle(77,2);
         list.insertMiddle2(500,1);
-        list.display();
+      /*  list.display();
+        list.deleteFirst();
+        list.display();*/
+
+        SingleLinkedList list2 = new SingleLinkedList();
+        list2.insertLast(40);
+        list2.insertLast(50);
+        list2.insertLast(60);
+        list2.insertLast(70);
+
+
+        list2.deleteLast();
+        list2.display();
+
+
     }
-
-
 
     private  Node head;
     private  Node tail;
@@ -29,9 +41,10 @@ public class SingleLinkedList {
         size +=1;
     }
 
-    public void inserLast(int data){
+    public void insertLast(int data){
         if(tail == null){
           insertValues(data);
+          return;
         }
 
         Node node1 = new Node(data);
@@ -44,11 +57,9 @@ public class SingleLinkedList {
     public void insertMiddle2(int data, int index){
 
         Node temp = head;
-
         for(int i=1; i<index; i++){
             temp = temp.next;
         }
-
         Node node3 = new Node(data, temp.next);
         temp.next = node3;
         size++;
@@ -59,17 +70,13 @@ public class SingleLinkedList {
             insertValues(data);
             return;
         }
-
         if(index == size){
-            inserLast(data);
+            insertLast(data);
         }
-
         Node temp = head; //start temp node at head as initial point
         for (int i=1; i<index; i++){
             temp = temp.next; //move temp node to nearest insertion point
-
         }
-
         Node node1 = new Node(data, temp.next); //create a new node with the value you're looking at add and this node1 will store the address of next node
         temp.next = node1;
         size++;
@@ -82,12 +89,42 @@ public class SingleLinkedList {
             System.out.print(temp.data + "->");
             temp = temp.next;
         }
-        System.out.println("end");
+        System.out.println();
 
     }
 
+    public int deleteFirst(){
+        int value = head.data;
+        head = head.next;
 
+        if(head == null){
+            tail = null;
+        }
 
+        size--;
+        return value;
+    }
+
+    public Node getIndex(int index){
+        Node node = head;
+        for (int i = 0; i < index; i++) {
+          node = node.next;
+        }
+        return node;
+    }
+
+    public int deleteLast(){
+     if(size <=1){
+         return deleteFirst();
+     }
+
+     Node secondLast = getIndex(size-2);
+     int val = tail.data;
+     tail = secondLast;
+     tail.next = null;
+
+     return val;
+    }
 
     public class Node{
         int data;
