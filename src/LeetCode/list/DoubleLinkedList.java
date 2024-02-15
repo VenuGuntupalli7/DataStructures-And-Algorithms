@@ -10,6 +10,7 @@ public class DoubleLinkedList {
         list.insertValuesHead(30);
         list.insertValuesHead(40);
         list.insertLast(500);
+        list.insert(40,15);
         list.display();
         list.displayReverse();
 
@@ -95,6 +96,28 @@ public class DoubleLinkedList {
         node1.prev = temp;
         temp.next = node1;
 
+    }
+
+    public Node find(int value){
+        Node temp = head;
+        while (temp != null){
+            if(temp.data == value){
+                return temp;
+            }
+            temp = temp.next;
+        }
+        return null;
+    }
+
+    public void insert(int after, int value){
+        Node p = find(after);
+        Node node1 = new Node(value);
+        node1.next = p.next;
+        p.next = node1;
+        node1.prev =p;
+        if( node1.next != null){
+            node1.next.prev = node1;
+        }
     }
 
 
